@@ -1,0 +1,7 @@
+List of References
+
+Reference 1: http://stackoverflow.com/questions/33440624/pythonic-way-to-flatten-a-dictionary-into-a-list-using-list-comprehension
+
+Reference 2: http://scikit-learn.org/stable/
+
+“I hereby confirm that this submission is my work. I have cited above the origins of any parts of the submission that were taken from websites, books, forums, blog posts, github repositories, etc."

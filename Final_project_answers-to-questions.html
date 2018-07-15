@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Final_project_answers-to-questions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Answers to Final Project Questions</h1>
+<p>The code to generate images in this document is provided in the supplementary files.</p>
+<h2></h2>
+<h3>1. Summarize for us the goal of this project and how machine learning is useful in trying to accomplish it. As part of your answer, give some background on the dataset and how it can be used to answer the project question. Were there any outliers in the data when you got it, and how did you handle those? [relevant rubric items: “data exploration”, “outlier investigation”]</h3>
+<p>The goal of the project is to identify <strong>person of interest (POI)</strong> involved in the Enron corporate fraud based on the financial and email data made public from the investigation. The dataset contains financial features (salary, deferral_payments, total_payments, bonus, total_stock_values, etc.), email features (email_address, from_poi_to_this_person, from_this_person_to_poi, etc.), and POI labels. With large amount of data (i.e., features), it is challenging to intuitively select, analyze and/or use the information to identify POIs for  the investigation. Machine learning may help to effectively narrow down the POI list to help with the investigation involved in the fraud scandal.</p>
+<h3><em>Data exploration</em></h3>
+<p>The original data_dict file contained <strong>146 data points (persons)</strong> with feature information, and <strong>18 people were tagged as POIs</strong>. First, scatter plots of the feature were generated to explore the data. Upon inspection, an <strong>outlier</strong> was present in all features which was identified as &quot;TOTAL&quot; and not a person. This data was removed from data_dict in all subsequent analysis. Scatter plot below compares distribution of features before and after the removal of the outlier &quot;TOTAL&quot;.</p>
+<p><img src="http://i.imgur.com/Wjcb2rE.png" /></p>
+<p><img src="http://i.imgur.com/zdm9Iyi.png" /></p>
+<p><img src="http://i.imgur.com/jv17fWT.png" /></p>
+<h3>2. What features did you end up using in your POI identifier, and what selection process did you use to pick them? Did you have to do any scaling? Why or why not? As part of the assignment, you should attempt to engineer your own feature that does not come readymade in the dataset explain what feature you tried to make, and the rationale behind it. (You do not necessarily have to use it in the final analysis, only engineer and test it.) In your feature selection step, if you used an algorithm like a decision tree, please also give the feature importances of the features that you use, and if you used an automated feature selection function like SelectKBest, please report the feature scores and reasons for your choice of parameter values. [relevant rubric items: “create new features”, “properly scale features”, “intelligently select feature”]</h3>
+<h3><em>Data exploration</em></h3>
+<p>Upon inspecting the features using the scatter plots below, following observations were made:</p>
+<ul>
+<li>The values of the features vary greatly. In some cases, several orders of magnitude differences are noted between different features.</li>
+<li>Distributions of the data in the features are different although most of the features are positively-skewed.</li>
+</ul>
+<p><img src="http://i.imgur.com/oTHDOYt.png" /></p>
+<p><img src="http://i.imgur.com/WpTvBz4.png" /></p>
+<h3>Engineering of new features</h3>
+<p>Two new features, &quot;from_poi_to_this_person_norm&quot; and &quot;from_this_person_to_poi_norm&quot;, were engineered from existing  features: &quot;from_poi_to_this_person&quot; and &quot;from_this_person_to_poi&quot;. Since total number of messages to and from varies for  people, it seems reasonable to normalize the number of emails sent and received from POIs based on total number of to and from messages.</p>
+<h3>Feature scaling</h3>
+<p>With 16 features initially considered for the analysis, dimensional reduction may become necessary. To apply principal component analysis (PCA), the features were scaled using <strong>StandardScaler()</strong>. Plot below compares &quot;salary&quot; feature with and without scaling:</p>
+<p><img src="http://i.imgur.com/TgYxAM7.png" />  </p>
+<p>Below are example scatter plots of scaled features:</p>
+<p><img src="http://i.imgur.com/ZDPP4pq.png" /></p>
+<h3>Feature selection</h3>
+<p>The final features were selected as the following:</p>
+<ul>
+<li>The data given had many &quot;NaNs&quot; or missing values. 97.9% of load_advances feature was &quot;NaN&quot;.</li>
+<li>In the next step, SelectKBest() was performed on the scaled features.</li>
+<li>16 final features selected for analysis are shown below ordered from most to least significant features based on the P-values. </li>
+</ul>
+<table>
+<thead>
+<tr>
+	<th>Features</th>
+	<th>P_value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>exercised_stock_options_scaled</td>
+	<td>2.764198e-07</td>
+</tr>
+<tr>
+	<td>total_stock_value_scaled</td>
+	<td>8.029415e-06</td>
+</tr>
+<tr>
+	<td>from_this_person_to_poi_norm_scaled</td>
+	<td>3.609467e-04</td>
+</tr>
+<tr>
+	<td>bonus_scaled</td>
+	<td>9.302737e-04</td>
+</tr>
+<tr>
+	<td>salary_scaled</td>
+	<td>2.599940e-03</td>
+</tr>
+<tr>
+	<td>total_payments_scaled</td>
+	<td>5.983608e-03</td>
+</tr>
+<tr>
+	<td>restricted_stock_scaled</td>
+	<td>9.803916e-03</td>
+</tr>
+<tr>
+	<td>loan_advances_scaled</td>
+	<td>1.338024e-02</td>
+</tr>
+<tr>
+	<td>long_term_incentive_scaled</td>
+	<td>1.582767e-02</td>
+</tr>
+<tr>
+	<td>shared_receipt_with_poi_scaled</td>
+	<td>1.797600e-02</td>
+</tr>
+<tr>
+	<td>deferred_income_scaled</td>
+	<td>1.920461e-02</td>
+</tr>
+<tr>
+	<td>from_poi_to_this_person_norm_scaled</td>
+	<td>2.830167e-01</td>
+</tr>
+<tr>
+	<td>expenses_scaled</td>
+	<td>4.901997e-01</td>
+</tr>
+<tr>
+	<td>deferral_payments_scaled</td>
+	<td>5.384383e-01</td>
+</tr>
+<tr>
+	<td>restricted_stock_deferred_scaled</td>
+	<td>1.000000e+00</td>
+</tr>
+<tr>
+	<td>director_fees_scaled</td>
+	<td>1.000000e+00</td>
+</tr>
+</tbody>
+</table>
+<h3>3. What algorithm did you end up using? What other one(s) did you try? How did model performance differ between algorithms? [relevant rubric item: “pick an algorithm”]</h3>
+<p>Various algorithms were investigated, which included Gaussian Naive Bayes (GaussianNB), Decision Tree, Support Vector Machine (SVM), and Random Forest in combination with Principal Component Analysis (PCA) and SelectKBest for some classifiers. The model performance varied significantly with different algorithms as well as the parameter settings within the algorithm itself. Although it is difficult to precisely point out the differences between algorithms, following are some observations made:</p>
+<ul>
+<li>GaussianNB gave quick and robust results. Using  it with SelectKBest(k=3), the model gave performance of Accuracy: 0.857, Precision: 0.376, Recall: 0.287.</li>
+<li>Random Forest takes longer time to run than GaussianNB algorithm. The algorithm has tendency to give high precision but lower recall performances. (e.g., Accuracy: 0.871, Precision: 0.304, Recall: 0.180)</li>
+<li>Decision Tree algorithm gave balanced Precision and Recall performance scores. (e.g., Accuracy: 0.840, Precision: 0.397, Recall: 0.403)</li>
+<li>SVM algorithm was particularly sensitive to parameters, and therefore, results varied greatly depending on the settings. With a particular parameter setting (kernel=&quot;rbf&quot;, gamma=0.15, C=100), it gave performance scores of: Accuracy: 0.827, Precision: 0.187, Recall: 0.151.</li>
+<li>Additionally, DecisionTree along with PCA was tried, but did not yield better performance than just solely using  the DecisionTree. </li>
+</ul>
+<p>Two strategies were tested to formulate the final algorithm for this problems: Option 1 and Option 2.</p>
+<ul>
+<li>In Option 1, <strong>Decision Tree with SelectKBest</strong> was selected as the final algorithm. As noted by the reviewer of the first submission, this can cause bias on the result as SelectKBest is performed on training and testing dataset.</li>
+<li>In Option 2, <strong>Combined feature selection with validation</strong> strategy was employed. With <strong>Decision Tree</strong>, F_scores of each feature was calculated when running 1000 folds and average F_scores were ploted as below:</li>
+</ul>
+<p><img src="http://i.imgur.com/Zv3tQqs.png" /></p>
+<p>Features up to and including &quot;shared_receipt_with_poi_scaled&quot; was selected as there is a drop of contribution afterwards. Moreover, it was noted that the features selected from Option 1 and Option 2 were different.</p>
+<h3>4. What does it mean to tune the parameters of an algorithm, and what can happen if you don’t do this well? How did you tune the parameters of your particular algorithm? (Some algorithms do not have parameters that you need to tune if this is the case for the one you picked, identify and briefly explain how you would have done it for the model that was not your final choice or a different model that does utilize parameter tuning, e.g. a decision tree classifier). [relevant rubric item: “tune the algorithm”]</h3>
+<p>Algorithms have parameters that can be set to influence the results of the model. By tuning these parameters, the model can be set to behave in a certain way that may better predict desired outcome or goal of the analysis.  <strong>Decision Tree algorithm with SelectKBest</strong> was selected as it gave balanced performance scores for Precision and Recall. Parameters were tuned using Pipeline and GridSearchCV to select values for k and min_samples_split. To improve the accuracy of the search, StratifiedShuffleSplit was used as cross validation parameter within the GridSearchCV.</p>
+<p>Final parameter settings acquired are as follows:</p>
+<p>Pipeline(steps=[('selector', SelectKBest(k=10, score_func=&lt;function f_classif at 0x0000000007014DD8&gt;)), ('tree', DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,            max_features=None, max_leaf_nodes=None, min_samples_leaf=1, min_samples_split=6, min_weight_fraction_leaf=0.0, presort=False, random_state=None, splitter='best'))])</p>
+<h3>5. What is validation, and what’s a classic mistake you can make if you do it wrong? How did you validate your analysis? [relevant rubric item: “validation strategy”]</h3>
+<p>Validation in machine learning is a step to check if the developed algorithm predicts untrained datasets accurately. A classic mistake is over-fitting where the algorithm works well for the dataset used for training, but predicts poorly on the test dataset.</p>
+<p>Validation is performed through function name, validate_clf. StratifiedShuffleSplit is used as the data is imbalanced with many more non-POIs than POIs. StratifiedShuffleSplit will split the training and testing sets with similar proportion of non-POIs and POIs in the dataset. 1000 folds with test_size=0.1 were created for the validation.</p>
+<h3>6. Give at least 2 evaluation metrics and your average performance for each of them. Explain an interpretation of your metrics that says something human understandable about your algorithm’s performance. [relevant rubric item: “usage of evaluation metrics”]</h3>
+<p>The accuracy, POI precision, POI recall, and confusion matrix were averaged over 1000 evaluations for the selected final algorithm.</p>
+<h3><em>Results from Option 1: DecisionTree + SelctKBest</em></h3>
+<p><strong>accuracy: 0.854 <br>
+POI precision: 0.457 <br>
+POI recall: 0.467 <br></strong></p>
+<p><img src="http://i.imgur.com/KfyMWWV.png" /></p>
+<p>The <strong>accuracy</strong> refers to fraction of correct labels predicted by the final algorithm. Accuracy includes predictions for both POIs and non-POIs. Since we have only 18 POIs and many more non-POIS (128 of them), accuracy does not reflect how good the algorithm is in predicting POIs. <strong>POI precision</strong> refers to fraction of correctly predicted labels for POIs out of all predictions labeled as POIs. In other words, high POI precision means that there are small number of incorrect predictions as POIs. <strong>POI recall</strong> refers to fraction of correctly predicted labels for POIs out of all predictions that involved true POIs. Therefore, high POI recall means that there are small number of incorrect predictions as non-POIs.</p>
+<p>Based on the performance scores, the algorithm does a very good job. <u>There is 45.7% chance that the person is indeed a POI if algorithm predicts as a POI. Also, there is 46.7% chance that the algorithm will correctly predict as a POI if that person is indeed a POI.</u></p>
+<h3><em>Results from Option 2: Combined feature selection with cross validation</em></h3>
+<p><strong>accuracy: 0.854 <br>
+POI precision: 0.449 <br>
+POI recall: 0.460 <br></strong></p>
+<p><img src="http://i.imgur.com/Koro2Qp.png" /></p>
+<h3><em>Results using original features_list</em></h3>
+<p>Using non-scaled features_list and without the two newly added features, the performance of <strong>Decision Tree + SelectKBest</strong> becomes:</p>
+<p><strong>accuracy: 0.810 <br>
+POI precision: 0.230 <br>
+POI recall: 0.242 <br></strong></p>
+<p>It is quite obvious that feature transformation significantly affected algorithm performance.</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
